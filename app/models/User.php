@@ -49,6 +49,17 @@ class User {
             return false;
         }
     }
+
+    public function getUserById($id) {
+        $this->db->query('SELECT * FROM users where id=:id');
+        //Bind Value
+        $this->db->bind(':id',$id);
+
+        $row=$this->db->single();
+        
+        return $row;
+        }
+    
 }
 
 ?>
