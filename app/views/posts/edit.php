@@ -19,7 +19,7 @@
                         <?php echo (!empty($data['body_err'])) ? 'is-invalid' : ''; ?>"><?php echo $data['body']; ?></textarea>
                         <span class="invalid-feedback"><?php echo $data['body_err']; ?></span>
                 </div>
-                <input type="submit" class="btn btn-success" value="submit">
+                <div class="text-center"><input type="submit" class="btn btn-success" value="Update"></div>
             </form>
         </div>
 

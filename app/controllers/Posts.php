@@ -19,7 +19,7 @@ class Posts extends Controller {
             $this->view('posts/index',$data);
         }
         public function add() {
-            if($_SERVER['REQUEST_METHOD']=='POST') {
+            if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 //Sanitize post
                 $_POST=filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
                 $data=[
